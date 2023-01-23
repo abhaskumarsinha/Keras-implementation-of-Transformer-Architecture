@@ -23,12 +23,66 @@ We employed Byte-Pair Encoding (BPE) tokenization [2] from the subword-nmt libra
 
 ### Usage
 
+In this implementation, the `\dataset\` path requires two separate files for Hindi and English sentences, where the i-th line of the English file corresponds to the i-th line of the Hindi translation. The source language, Hindi, is referred to as the "Secondary" language and the target language, English, is referred to as the "Primary" language. The `dataset.create_dataset()` function automatically compiles the sentences of the primary and secondary languages as required. The compiled data can be accessed through the following variables: `dataset.encoder_inputs`, `dataset.decoder_inputs`, and `dataset.output_vectors` for primary language input to the encoder (English), secondary language input to the decoder (Hindi), and secondary language word one-hot encoding output (Hindi), respectively.
+
+The `Encoder()`, `Decoder()` are used to create the transformer encoders and decoders respectively. Note that we are using special Multi-head attention here in the implementation using loops in contrast to the original multi-head attention implementation by native TensorFlow library.
+
+
 ## Results
 ### Graphs
-### Convergence Tables
+The convergence training graph:
+![Uploading loss-curve2.png…](*Number of Epochs vs Training Loss graph*)
+
+
+<!-- ### Convergence Tables -->
 ### Sample Outputs
+
+> politicians do not have permission to do what needs to be done.
+> राजनीतिज्ञों के पास जो कार्य करना चाहिए, वह कि कि रहा कि न है करना , प्रकार वह होते हैं | हैं सकती है चाहिए । चाहिए । चाहिए चाहिए . . . . है । । । . . . . है । . . . । । . । . । । । । । । । ।
+
+> This percentage is even greater than the percentage in India.
+> यह प्रतिशत भारत में हिन्दुओं प्रतिशत से अधिक है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। की है। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं।
+
+> humans destroyed the commons that they depended on.
+> मानवों ने उन ही साझे संसाधनों को नष्ट किया जिन पर वो आधारित थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे।
+
+> Sanskrit is world's oldest language of vedas.
+> संस्कृत वका सेसेसेसेसेसेलिए में करें ही... ... ... ... ... ... ... ... ... हीहै। | है। है। है। नाम है। शामिल हैं है। है। है। है। शामिल है. है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। | है। | रहे रहे
+
+> In Indian culture, Holy texts have a special importance, and the Purans are among the most important of all the holy texts.
+> भारतीय जीवन-धारा में जिन ग्रन्थों का महत्वपूर्ण स्थान है उनमें पुराण भक्ति-ग्रंथों के रूप में बहुत महत्वपूर्ण माने जाते हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं।
+
+> In Indian culture, Holy texts are written in Sanskrit language in greater percentage
+> भारतीय आयु संस्कृत बिप्राप्त की के तततहो ही | होना है के दो तथा बी बी दो दो दो दो है, | है . और . . . और . और पर . और . . भी पर . पर करने . ) है . . . . . . . . . . . . . . . .
+
+> India and China are countries in Asia
+> और और याही ों एक एक मयामममजुभर भर है, है, है हैं हूँ, हूँ, । । कोहै। सहेकोहै। है। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। । । । । । । । ।
+
+> Ancient Sanskrit literature is extremely old, vast and diverse
+> संस्कृत का प्राचीन साहित्य अत्यन्त प्राचीन विशाल और विविधतापूर्ण है। है। है। है। है। है। है। है। में है। है। है। है। है। है। है. है. की है. दीहै. है. है. टटहै. है. में है. है. हुए ते है. से है. है. है. है. है. है. है. है. है. है. है. है. है. है. है. है. है. है.
+
+> Ancient Sanskrit literature is extremely old religious creations in Hindi.
+> स्कृत एक दूसरा पूर्ण सहायता सहायता सम्का बोउपयोग उपयोग का ों स्ट है। का है। है। है। है। है। है। है। है। है। है। की होती है। ध्यान का है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है। है। है। है। है। है। है। है। है। है। है। है। है।
 
 ## For commercial-use/deployment
 
+The demonstration code **IS BY NO WAY** suitable for any commercial-use/deployment. Kindly, train a bigger version of the transformer with atleast few million examples to get reliable estimate of the translated language. Consider pre-training them in Hindi only texts and then training pre-trained version for translation or fine-tuning for other downstream tasks.
+
+## Projects
+
+For CPU-only training, the model is perfectly capable of jobs requiring MC (Machine Comprehension), POS Tagging, NER (Named-Entity Recognition), Text generation etc. But for the case of tasks such as chatbots, translation, summarization, consider pre-training it over large corpus of data before training them with few hundred million example over very high-performance TPUs or distributed learning servers.
+
 ## Conclusion
+
+We therefore end our documentation leaving example notebooks for the readers to experiment and learn from our implementation. Feel free to open issues or open new PR for the project.
+
+# Biblography
+1. Bojar, Ondřej, et al. "Hindencorp-hindi-english and hindi-only corpus for machine translation." Proceedings of the Ninth International Conference on Language Resources and Evaluation (LREC'14). 2014.
+2. Rico Sennrich, Barry Haddow and Alexandra Birch (2016): Neural Machine Translation of Rare Words with Subword Units Proceedings of the 54th Annual Meeting of the Association for Computational Linguistics (ACL 2016). Berlin, Germany.
+3. Vaswani, Ashish, et al. "Attention is all you need." Advances in neural information processing systems 30 (2017).
+4. Devlin, Jacob, et al. "Bert: Pre-training of deep bidirectional transformers for language understanding." arXiv preprint arXiv:1810.04805 (2018).
+5. Radford, Alec, et al. "Improving language understanding by generative pre-training." (2018).
+6. Raffel, Colin, et al. "Exploring the limits of transfer learning with a unified text-to-text transformer." J. Mach. Learn. Res. 21.140 (2020): 1-67.
+7. Chowdhery, Aakanksha, et al. "Palm: Scaling language modeling with pathways." arXiv preprint arXiv:2204.02311 (2022).
+8. Chorowski, Jan K., et al. "Attention-based models for speech recognition." Advances in neural information processing systems 28 (2015).
 
