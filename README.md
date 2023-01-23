@@ -38,31 +38,31 @@ The convergence training graph:
 <!-- ### Convergence Tables -->
 ### 2.2. Sample Outputs
 
-> politicians do not have permission to do what needs to be done.
+> politicians do not have permission to do what needs to be done. <br>
 > राजनीतिज्ञों के पास जो कार्य करना चाहिए, वह कि कि रहा कि न है करना , प्रकार वह होते हैं | हैं सकती है चाहिए । चाहिए । चाहिए चाहिए . . . . है । । । . . . . है । . . . । । . । . । । । । । । । ।
 
-> This percentage is even greater than the percentage in India.
+> This percentage is even greater than the percentage in India.<br>
 > यह प्रतिशत भारत में हिन्दुओं प्रतिशत से अधिक है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। की है। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं।
 
-> humans destroyed the commons that they depended on.
+> humans destroyed the commons that they depended on. <br>
 > मानवों ने उन ही साझे संसाधनों को नष्ट किया जिन पर वो आधारित थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे। थे।
 
-> Sanskrit is world's oldest language of vedas.
+> Sanskrit is world's oldest language of vedas. <br>
 > संस्कृत वका सेसेसेसेसेसेलिए में करें ही... ... ... ... ... ... ... ... ... हीहै। | है। है। है। नाम है। शामिल हैं है। है। है। है। शामिल है. है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। है। | है। | रहे रहे
 
-> In Indian culture, Holy texts have a special importance, and the Purans are among the most important of all the holy texts.
+> In Indian culture, Holy texts have a special importance, and the Purans are among the most important of all the holy texts. <br>
 > भारतीय जीवन-धारा में जिन ग्रन्थों का महत्वपूर्ण स्थान है उनमें पुराण भक्ति-ग्रंथों के रूप में बहुत महत्वपूर्ण माने जाते हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं।
 
-> In Indian culture, Holy texts are written in Sanskrit language in greater percentage
+> In Indian culture, Holy texts are written in Sanskrit language in greater percentage <br>
 > भारतीय आयु संस्कृत बिप्राप्त की के तततहो ही | होना है के दो तथा बी बी दो दो दो दो है, | है . और . . . और . और पर . और . . भी पर . पर करने . ) है . . . . . . . . . . . . . . . .
 
-> India and China are countries in Asia
+> India and China are countries in Asia <br>
 > और और याही ों एक एक मयामममजुभर भर है, है, है हैं हूँ, हूँ, । । कोहै। सहेकोहै। है। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। हैं। । । । । । । । ।
 
-> Ancient Sanskrit literature is extremely old, vast and diverse
+> Ancient Sanskrit literature is extremely old, vast and diverse <br>
 > संस्कृत का प्राचीन साहित्य अत्यन्त प्राचीन विशाल और विविधतापूर्ण है। है। है। है। है। है। है। है। में है। है। है। है। है। है। है. है. की है. दीहै. है. है. टटहै. है. में है. है. हुए ते है. से है. है. है. है. है. है. है. है. है. है. है. है. है. है. है. है. है. है.
 
-> Ancient Sanskrit literature is extremely old religious creations in Hindi.
+> Ancient Sanskrit literature is extremely old religious creations in Hindi. <br>
 > स्कृत एक दूसरा पूर्ण सहायता सहायता सम्का बोउपयोग उपयोग का ों स्ट है। का है। है। है। है। है। है। है। है। है। है। की होती है। ध्यान का है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है| है। है। है। है। है। है। है। है। है। है। है। है। है।
 
 ## 3. For commercial-use/deployment
