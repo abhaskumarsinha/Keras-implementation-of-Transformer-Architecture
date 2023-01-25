@@ -1,6 +1,6 @@
 # Keras-implementation-of-Transformer-Architecture
 
-[[`Jump to TPU Colab version of the file`]](https://github.com/abhaskumarsinha/Keras-implementation-of-Transformer-Architecture/blob/main/StackedTransformer_TPU%20output.ipynb) [[`Original Paper`]](https://arxiv.org/abs/1706.03762) [[`Transformer Huggingface`]](https://huggingface.co/docs/transformers/index)
+[[`Jump to TPU Colab demo Notebook`]](https://github.com/abhaskumarsinha/Keras-implementation-of-Transformer-Architecture/blob/main/StackedTransformer_TPU%20output.ipynb) [[`Original Paper`]](https://arxiv.org/abs/1706.03762) [[`Transformer Huggingface`]](https://huggingface.co/docs/transformers/index)
 
 
 <p align="justify">
